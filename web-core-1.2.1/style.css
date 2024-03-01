@@ -12,22 +12,28 @@ h2 {
   font-size: 2.5rem;
 }
 p {
-  font-size: 1.5rem;
+  
 }
 .container {
   display: flex;
+  width: 100%;
+
 }
 .header {
+      width: 50%;
   margin: 150px;
   padding-bottom: 10px;
 }
-.btn-1 {
-  width: 30%;
-  height: 40px;
+.btn{  width:80%;
+  height: 300px;
+margin-top: 200px;
   border: none;
   font-size: 18px;
   background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
 }
+.btn-1 {
+
+
+ 
+}
+
