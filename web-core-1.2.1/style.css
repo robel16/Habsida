@@ -1,0 +1,33 @@
+@font-face {
+  font-family: barlow;
+  src: url("barlowsemicondensed-light.otf") format("opentype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #eff6ff;
+}
+h2 {
+  padding-bottom: 20px;
+  font-size: 2.5rem;
+}
+p {
+  font-size: 1.5rem;
+}
+.container {
+  display: flex;
+}
+.header {
+  margin: 150px;
+  padding-bottom: 10px;
+}
+.btn-1 {
+  width: 30%;
+  height: 40px;
+  border: none;
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
