@@ -1,39 +1,103 @@
-@font-face {
-  font-family: barlow;
-  src: url("barlowsemicondensed-light.otf") format("opentype");
-}
-* {
-  margin: 0;
+body {
   padding: 0;
-  background-color: #eff6ff;
+    margin: 0;
+
 }
-h2 {
-  padding-bottom: 20px;
-  font-size: 2.5rem;
-}
-p {
-  
-}
+
 .container {
-  display: flex;
-  width: 100%;
+    display: flex;
+   
+   
+}
 
+/* .left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.left img {
+    width: 100%;
+   
 }
-.header {
-      width: 50%;
-  margin: 150px;
-  padding-bottom: 10px;
+
+.right {
+  margin-left:  40px;
+  margin-top: 50px;
 }
-.btn{  width:80%;
-  height: 300px;
-margin-top: 200px;
+
+h1, p {
+    color: #2A4A5C;
+}
+
+.buttons button {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #255A9B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.buttons button img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.separator {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.separator hr {
   border: none;
-  font-size: 18px;
-  background-color: #007bff;
-}
-.btn-1 {
-
-
- 
+  border-top: 1px solid #7B8A92;
+  width: 40%;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px;
 }
 
+.separator span {
+  color: #7B8A92;
+  display: inline-block;
+}
+
+input[type="email"], input[type="tel"] {
+    width: calc(50% - 5px); /* Adjust width for two inputs */
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.investor-type label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.agree-button {
+    background-color: #3698FB;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.terms-link {
+    color: #3698FB;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.create-account-button {
+    background-color: #0076B6;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+}

@@ -8,14 +8,53 @@
   </head>
   <body>
     <div class="container">
-      <div class="bg-img">
-        <img src="./img/bg.jpg" alt="" />
+      <div class="left">
+        <img src="./img/bg.jpg" alt="Your Image" />
+       
       </div>
-      <div class="header">
-        <h2>get into it today</h2>
-        <p>there is no charge or obligation upon registration</p>
+      <div class="right">
+        <h1>Get iinto it today</h1>
+        <p>There is no change or obligation upon registration.</p>
+        <div class="buttons">
+          <button class="facebook">
+            <img src="./img/facebook.svg" alt="" />
+            Register with Facebook
+          </button>
+          <button class="linkedin">
+            <img src="./img/linkedin.svg" alt="" />
+            Register with LinkedIn
+          </button>
+        </div>
+        <div class="separator">
+          <hr />
+          <span>OR</span>
+          <hr />
+        </div>
+        <form >
+          <input type="email" placeholder="Email" />
+          <input type="tel" placeholder="Phone" />
+        </form>
+        <h1>What type of investor are you?</h1>
+        <p>Select the type of investor you are:</p>
+        <div class="investor-type">
+          <label
+            ><input type="radio" name="investor" value="individual" />
+            Individual</label
+          ><br />
+          <label
+            ><input type="radio" name="investor" value="business" />
+            Business</label
+          ><br />
+          <label><input type="radio" name="investor" value="ira" /> IRA</label
+          ><br />
+          <label
+            ><input type="radio" name="investor" value="trust" /> Trust</label
+          >
+        </div>
+        <button class="agree-button">I agree to the terms and receiving</button>
+        <a href="#" class="terms-link">View full terms</a>
+        <button class="create-account-button">Create Account</button>
       </div>
-<div class="btn"></div>
     </div>
   </body>
 </html>
