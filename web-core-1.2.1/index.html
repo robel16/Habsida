@@ -6,14 +6,13 @@
     <link rel="stylesheet" href="./style.css" />
     <title>webcore-1.2.1</title>
   </head>
-  <body>
+  
     <div class="container">
       <div class="left">
         <img src="./img/bg.jpg" alt="Your Image" />
-       
       </div>
       <div class="right">
-        <h1>Get iinto it today</h1>
+        <h2>Get iinto it today</h2>
         <p>There is no change or obligation upon registration.</p>
         <div class="buttons">
           <button class="facebook">
@@ -21,7 +20,7 @@
             Register with Facebook
           </button>
           <button class="linkedin">
-            <img src="./img/linkedin.svg" alt="" />
+            <img src="./img/linkedin.svg" class="icon1" alt="" />
             Register with LinkedIn
           </button>
         </div>
@@ -30,31 +29,73 @@
           <span>OR</span>
           <hr />
         </div>
-        <form >
+        <form>
           <input type="email" placeholder="Email" />
           <input type="tel" placeholder="Phone" />
         </form>
-        <h1>What type of investor are you?</h1>
+        <h3>What type of investor are you?</h3>
         <p>Select the type of investor you are:</p>
         <div class="investor-type">
-          <label
-            ><input type="radio" name="investor" value="individual" />
-            Individual</label
-          ><br />
-          <label
-            ><input type="radio" name="investor" value="business" />
-            Business</label
-          ><br />
-          <label><input type="radio" name="investor" value="ira" /> IRA</label
-          ><br />
-          <label
-            ><input type="radio" name="investor" value="trust" /> Trust</label
-          >
+          <label>
+            <input type="radio" name="investor" value="individual" />
+            Individual
+            <span class="info-icon">
+              <span class="bg-white"> i </span></span>
+            <div class="info-card">
+              <div class="info-details">
+                <h5>I am a natural person investing on my own behalf as a sole owner, joint tenant, of tenant in common</h5>
+              </div>
+            </div>
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="investor" value="business" />
+            Business
+            <span class="info-icon">
+              <span class="bg-white"> <span class="bg-white"> i </span> </span>
+            </span>
+            <div class="info-card">
+              <div class="info-details">
+                <h5>amet dictum sit amet justo donec enim diam vulputate ut</h5>
+              </div>
+            </div>
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="investor" value="ira" />
+            IRA
+            <span class="info-icon"><span class="bg-white"> i </span></span>
+            <div class="info-card">
+              <div class="info-details">
+                <h5>cras ornare arcu dui vivamus arcu felis bibendum ut tristique</h5>
+              </div>
+            </div>
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="investor" value="trust" />
+            Trust
+            <span class="info-icon"><span class="bg-white"> i </span></span>
+            <div class="info-card">
+              <div class="info-details">
+                <h5>morbi leo urna molestie at elementum eu facilisis sed odio</h5>
+              </div>
+            </div>
+          </label>
         </div>
-        <button class="agree-button">I agree to the terms and receiving</button>
-        <a href="#" class="terms-link">View full terms</a>
+
+        <p>
+          <input type="checkbox" name="" id="" />
+          I agree to terms and receiving notifications from iintoo<a
+            href="#"
+            class="terms-link"
+            >View full terms</a
+          >
+        </p>
+
         <button class="create-account-button">Create Account</button>
       </div>
     </div>
+
   </body>
 </html>
