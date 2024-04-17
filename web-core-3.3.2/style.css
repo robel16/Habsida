@@ -3,7 +3,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family:'roboto';
 }
 body {
   min-height: 100vh;
@@ -25,21 +24,21 @@ body {
   width: 100%;
   background-color: #ffff;
 }
-.menu {
+.header__menu {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.logo {
+.header__logo {
   width: 99px;
   margin-left: 15%;
 }
-.navbar {
+.header__navbar {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.icons {
+.header__icons {
   color: white;
   background-color: #ff3e79;
   font-size: 1.1rem;
@@ -47,7 +46,7 @@ body {
   border-radius: 100%;
 }
 
-.divider {
+.header__divider {
   border-left: 2px solid rgb(207, 196, 196);
   height: 30px;
   margin: 0 0px;
@@ -63,7 +62,17 @@ body {
   height: 84vh;
   background-color: #f8f8f8;
 }
-.title-service {
+
+.service__icons {
+  color: white;
+  background-color: #ff3e79;
+  font-size: 1.1rem;
+  padding: 10px;
+  border-radius: 100%;
+}
+
+
+.service__title {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -85,12 +94,12 @@ h1::before {
   width: 7px;
   background-color: #41f6d7;
 }
-.row {
+.service__row {
   margin: 28px 24px;
   display: flex;
   align-items: center;
 }
-.row input {
+.service__row input {
   width: 248px;
   border: 2px solid #b8ffec;
   border-radius: 5px;
@@ -98,7 +107,7 @@ h1::before {
   height: 40px;
   padding-left: 16px;
 }
-.row a {
+.service__row a {
   color: #7e7e82;
   text-decoration: none;
   margin: 14px;
@@ -141,7 +150,7 @@ h1::before {
   display: flex;
   justify-content: end;
 }
-.cps-image {
+.image-container__cps-image {
   border-radius: 14px;
   width: 87%;
 }
@@ -149,38 +158,38 @@ h1::before {
 /*===============================================
 =========Responsize Designes For Small Screen====
 =================================================*/
-@media (min-width: 320px) and (max-width: 551px) {
+@media (min-width: 120px) and (max-width: 551px) {
   .header {
     padding: 5px 10px;
   }
 
-  .icons-view-one {
+  .header__icons--view-one {
     display: none;
   }
   h1 {
     padding-left: 20px;
   }
 
-  .row a {
+  .service__row a {
     display: none;
   }
-  .row input {
+  .service__row input {
     margin: 20px 0px;
   }
   .main-body {
     display: block;
     margin-top: 2%;
   }
-  .cps-image {
+  .image-container__cps--image-120 {
     margin-top: 8%;
   }
-  .divider {
+  .header__divider {
     margin-right: 10px;
   }
-  .row .link-medium {
+  .service__row .service__link--medium-552 {
     display: none;
   }
-  .large-navbar {
+  .service__navbar-large-760 {
     display: none;
   }
 }
@@ -188,20 +197,20 @@ h1::before {
 =========Responsize Designes For Medium Screen====
 ==================================================*/
 @media screen and (min-width: 552px) and (max-width: 768px) {
-  .divider {
+  .header__divider {
     margin: 0px 8px 0px 8px;
   }
-  .large-navbar {
+  .service__navbar-large-760 {
     display: none;
   }
-  .row .link-medium {
+  .service__row .service__link--medium-552 {
     display: flex;
   }
-  .row .link-medium a {
+  .service__row .service__link--medium-552 a {
     text-align: center;
-    text-wrap:balance;
+
   }
-  .row .link-large {
+  .service__row .service__link--large-769 {
     display: none;
   }
 }
@@ -220,10 +229,10 @@ h1::before {
   .navbar .icons-view {
     display: none;
   }
-  .divider {
+  .header__divider {
     display: none;
   }
-  .large-navbar a {
+  .service__navbar-large-760 a {
     padding: 10px;
     text-decoration: none;
     color: #1b1c21;
@@ -234,19 +243,19 @@ h1::before {
     font-style: normal;
     letter-spacing: 0.2px;
   }
-  .large-navbar a span {
+  .service__navbar-large-760 a span {
     padding: 10px;
   }
-  .row {
+  .service__row {
     align-items: center;
   }
-  .row .link-medium {
+  .service__row .service__link--medium-552 {
     display: none;
   }
-  .row .link-large {
+  .service__row .service__link--large-769 {
     display: flex;
   }
-  .row .link-large a {
+  .service__row .service__link--large-769 a {
     text-wrap: wrap;
     text-align: center;
   }
