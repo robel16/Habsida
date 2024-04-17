@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:'roboto';
+}
+body {
+  min-height: 100vh;
+}
+
+/* ===================================
+======= header section + navbar ======
+====================================
+*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px 40px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #ffff;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  width: 99px;
+  margin-left: 15%;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons {
+  color: white;
+  background-color: #ff3e79;
+  font-size: 1.1rem;
+  padding: 10px;
+  border-radius: 100%;
+}
+
+.divider {
+  border-left: 2px solid rgb(207, 196, 196);
+  height: 30px;
+  margin: 0 0px;
+}
+
+/*=======================
+=========Servie Section== 
+=========================*/
+
+#service {
+  position: absolute;
+  width: 100%;
+  height: 84vh;
+  background-color: #f8f8f8;
+}
+.title-service {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 28px;
+}
+h1 {
+  position: relative;
+  padding-left: 70px;
+  font-size: 28px;
+  padding-top: 12px;
+}
+h1::before {
+  margin-top: 10px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 40px;
+  width: 7px;
+  background-color: #41f6d7;
+}
+.row {
+  margin: 28px 24px;
+  display: flex;
+  align-items: center;
+}
+.row input {
+  width: 248px;
+  border: 2px solid #b8ffec;
+  border-radius: 5px;
+  outline: none;
+  height: 40px;
+  padding-left: 16px;
+}
+.row a {
+  color: #7e7e82;
+  text-decoration: none;
+  margin: 14px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.main-body {
+  width: 100%;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+.main-body p {
+  text-wrap: wrap;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 24px;
+  padding: 0px 24px;
+}
+.main-body a {
+  text-decoration: none;
+  text-wrap: wrap;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  padding: 10px;
+  color: #1b1c21;
+  font-size: 16px;
+}
+.main-body a span {
+  margin-right: 20px;
+  color: #41f6d7;
+}
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.cps-image {
+  border-radius: 14px;
+  width: 87%;
+}
+
+/*===============================================
+=========Responsize Designes For Small Screen====
+=================================================*/
+@media (min-width: 320px) and (max-width: 551px) {
+  .header {
+    padding: 5px 10px;
+  }
+
+  .icons-view-one {
+    display: none;
+  }
+  h1 {
+    padding-left: 20px;
+  }
+
+  .row a {
+    display: none;
+  }
+  .row input {
+    margin: 20px 0px;
+  }
+  .main-body {
+    display: block;
+    margin-top: 2%;
+  }
+  .cps-image {
+    margin-top: 8%;
+  }
+  .divider {
+    margin-right: 10px;
+  }
+  .row .link-medium {
+    display: none;
+  }
+  .large-navbar {
+    display: none;
+  }
+}
+/*================================================
+=========Responsize Designes For Medium Screen====
+==================================================*/
+@media screen and (min-width: 552px) and (max-width: 768px) {
+  .divider {
+    margin: 0px 8px 0px 8px;
+  }
+  .large-navbar {
+    display: none;
+  }
+  .row .link-medium {
+    display: flex;
+  }
+  .row .link-medium a {
+    text-align: center;
+    text-wrap:balance;
+  }
+  .row .link-large {
+    display: none;
+  }
+}
+/*===============================================
+=========Responsize Designes For Larg Screen====
+================================================  */
+
+@media screen and (min-width: 769px) {
+  .header {
+    display: none;
+  }
+  #service {
+    height: 100vh;
+  }
+
+  .navbar .icons-view {
+    display: none;
+  }
+  .divider {
+    display: none;
+  }
+  .large-navbar a {
+    padding: 10px;
+    text-decoration: none;
+    color: #1b1c21;
+    font-size: 16px;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.2px;
+  }
+  .large-navbar a span {
+    padding: 10px;
+  }
+  .row {
+    align-items: center;
+  }
+  .row .link-medium {
+    display: none;
+  }
+  .row .link-large {
+    display: flex;
+  }
+  .row .link-large a {
+    text-wrap: wrap;
+    text-align: center;
+  }
+}
