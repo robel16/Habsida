@@ -1,0 +1,104 @@
+/* styles.css */
+
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body{
+      font-family:  'ROBOTO', sans-serif;
+      overflow-y: hidden;
+      margin: 0;
+      padding: 0;
+}
+/* Sidebar styles */
+.sidebar {
+      width: 280px;
+      height: 96vh;
+      background-color: #fff;
+      
+      /* Change background color as needed */
+      box-shadow: 0px 0px 90px rgba(0, 0, 0, 0.3);
+      /* Adding shadow to the right */
+      padding: 20px;
+      display: flex;
+      /* Ensure sidebar fills its container */
+      flex-direction: column;
+      /* Make sidebar's content flow in column */
+      overflow-y: hidden;
+}
+/* Logo styles */
+.sidebar__logo {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+}
+.sidebar__title{
+      color: #A4A4A7;
+      margin-bottom: 50px;
+}
+.sidebar__section {
+      margin-bottom: 60px;
+      flex-grow: 1;
+      font-weight: bold;
+      /* Allow sidebar__section to expand and fill remaining space */
+      display: flex;
+      flex-direction: column;
+      /* Set flex direction to column */
+}
+
+
+.sidebar__link {
+      display: block;
+      margin-bottom: 50px;
+      text-decoration: none;
+      color: #333;
+      /* Change link color as needed */
+      width: 100%;
+      /* Ensure links take full width */
+      text-align: left;
+      /* Align links to the left */
+}
+.sidebar__contacts-icons{
+  display: flex;
+
+}
+
+.header__icons {
+    
+      color: white;
+      background-color: #ff3e79;
+      font-size: 1.1rem;
+      padding: 10px;
+      border-radius: 100%;
+      margin-right: 18px;
+      margin-bottom: 15px;
+}
+.sidebar__contacts {
+      margin-bottom: 20px;
+}
+
+.sidebar__contacts a {
+      margin-right: 10px;
+      text-decoration: none;
+      color: #333;
+      /* Change link color as needed */
+}
+
+.sidebar__contacts div {
+      margin-bottom: 5px;
+}
+.sidebar__contacts-phone-number{
+      font-weight: bold;
+      font-size: x-large;
+}
+.sidebar__language {
+      display: flex;
+}
+
+.sidebar__language-link {
+      margin-right: 10px;
+      text-decoration: none;
+      color: #333;
+      /* Change link color as needed */
+}
