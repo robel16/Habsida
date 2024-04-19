@@ -14,15 +14,10 @@ body{
       width: 280px;
       height: 96vh;
       background-color: #fff;
-      
-      /* Change background color as needed */
       box-shadow: 0px 0px 90px rgba(0, 0, 0, 0.3);
-      /* Adding shadow to the right */
       padding: 20px;
       display: flex;
-      /* Ensure sidebar fills its container */
       flex-direction: column;
-      /* Make sidebar's content flow in column */
       overflow-y: hidden;
 }
 /* Logo styles */
@@ -36,26 +31,34 @@ body{
 .sidebar__title{
       color: #A4A4A7;
       margin-bottom: 50px;
+      margin-top: 30px;
+}
+.sidebar__title::before {
+      margin-top: 117px;
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 40px;
+      width: 5px;
+      background-color: #41f6d7;
+      border-radius: 0 12px 12px 0;
 }
 .sidebar__section {
       margin-bottom: 60px;
       flex-grow: 1;
       font-weight: bold;
-      /* Allow sidebar__section to expand and fill remaining space */
       display: flex;
       flex-direction: column;
-      /* Set flex direction to column */
 }
 
 
 .sidebar__link {
       display: block;
-      margin-bottom: 50px;
+      margin-bottom: 35px;
       text-decoration: none;
       color: #333;
-      /* Change link color as needed */
       width: 100%;
-      /* Ensure links take full width */
       text-align: left;
       /* Align links to the left */
 }
@@ -63,8 +66,11 @@ body{
   display: flex;
 
 }
-
-.header__icons {
+.sidebar__logo-small {
+      width: 99px;
+      margin-right: 40px;
+}
+.sidebar__icons {
     
       color: white;
       background-color: #ff3e79;
@@ -88,9 +94,15 @@ body{
 .sidebar__contacts div {
       margin-bottom: 5px;
 }
+.sidebar__contacts-mail{
+      font-weight: bold;
+      margin-top: 5px;
+      
+}
 .sidebar__contacts-phone-number{
       font-weight: bold;
       font-size: x-large;
+      margin-top: 10px;
 }
 .sidebar__language {
       display: flex;
@@ -100,5 +112,9 @@ body{
       margin-right: 10px;
       text-decoration: none;
       color: #333;
+      font-weight: bold;
       /* Change link color as needed */
+}
+.sidebar__language-link-faded{
+      color: #A4A4A7;
 }
