@@ -3,118 +3,121 @@
 /* Importing Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-body{
-      font-family:  'ROBOTO', sans-serif;
-      overflow-y: hidden;
-      margin: 0;
-      padding: 0;
+body {
+  font-family: "ROBOTO", sans-serif;
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
 }
 /* Sidebar styles */
 .sidebar {
-      width: 280px;
-      height: 96vh;
-      background-color: #fff;
-      box-shadow: 0px 0px 90px rgba(0, 0, 0, 0.3);
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      overflow-y: hidden;
+  width: 320px;
+  height: 96vh;
+  background-color: #fff;
+  box-shadow: 0px 0px 90px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
 }
 /* Logo styles */
 .sidebar__logo {
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
-.sidebar__title{
-      color: #A4A4A7;
-      margin-bottom: 50px;
-      margin-top: 30px;
+.sidebar__title {
+  color: #a4a4a7;
+  margin-bottom: 50px;
+  margin-top: 30px;
 }
 .sidebar__title::before {
-      margin-top: 117px;
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      height: 40px;
-      width: 5px;
-      background-color: #41f6d7;
-      border-radius: 0 12px 12px 0;
+  margin-top: 117px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 40px;
+  width: 5px;
+  background-color: #41f6d7;
+  border-radius: 0 12px 12px 0;
 }
 .sidebar__section {
-      margin-bottom: 60px;
-      flex-grow: 1;
-      font-weight: bold;
-      display: flex;
-      flex-direction: column;
+  margin-bottom: 60px;
+  flex-grow: 1;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
 }
-
 
 .sidebar__link {
-      display: block;
-      margin-bottom: 35px;
-      text-decoration: none;
-      color: #333;
-      width: 100%;
-      text-align: left;
-      /* Align links to the left */
-}
-.sidebar__contacts-icons{
-  display: flex;
+  display: block;
+  margin-bottom: 35px;
+  text-decoration: none;
+  color: #333;
+  width: 100%;
+  text-align: left;
 
 }
+.sidebar__contacts-icons {
+  display: flex;
+}
+
+
 .sidebar__logo-small {
-      width: 99px;
-      margin-right: 40px;
+  width: 99px;
+  margin-right: 40px;
 }
 .sidebar__icons {
-    
-      color: white;
-      background-color: #ff3e79;
-      font-size: 1.1rem;
-      padding: 10px;
-      border-radius: 100%;
-      margin-right: 18px;
-      margin-bottom: 15px;
+  color: white;
+  background-color: #ff3e79;
+  font-size: 1.1rem;
+  padding: 10px;
+  border-radius: 100%;
+  margin-right: 18px;
+  margin-bottom: 15px;
+transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.sidebar__icons:hover {
+      opacity: 3;
+      transform: scale(1.2);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .sidebar__contacts {
-      margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .sidebar__contacts a {
-      margin-right: 10px;
-      text-decoration: none;
-      color: #333;
-      /* Change link color as needed */
+  margin-right: 10px;
+  text-decoration: none;
+  color: #333;
 }
 
 .sidebar__contacts div {
-      margin-bottom: 5px;
+  margin-bottom: 5px;
 }
-.sidebar__contacts-mail{
-      font-weight: bold;
-      margin-top: 5px;
-      
+.sidebar__contacts-mail {
+  font-weight: bold;
+  margin-top: 5px;
 }
-.sidebar__contacts-phone-number{
-      font-weight: bold;
-      font-size: x-large;
-      margin-top: 10px;
+.sidebar__contacts-phone-number {
+  font-weight: bold;
+  font-size: x-large;
+  margin-top: 10px;
 }
 .sidebar__language {
-      display: flex;
+  display: flex;
 }
 
 .sidebar__language-link {
-      margin-right: 10px;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-      /* Change link color as needed */
+  margin-right: 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+ 
 }
-.sidebar__language-link-faded{
-      color: #A4A4A7;
+.sidebar__language-link-faded {
+  color: #a4a4a7;
 }
