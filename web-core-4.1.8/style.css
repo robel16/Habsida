@@ -13,7 +13,7 @@ body {
 .sidebar {
   width: 320px;
   height: 96vh;
-  background-color: #fff;
+  background-color: #0c0a0a;
   box-shadow: 0px 0px 90px rgba(0, 0, 0, 0.3);
   padding: 20px;
   display: flex;
@@ -120,4 +120,9 @@ transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 .sidebar__language-link-faded {
   color: #a4a4a7;
+}
+@media screen and  (max-width: 1660px)
+  {
+
+  }
 }
