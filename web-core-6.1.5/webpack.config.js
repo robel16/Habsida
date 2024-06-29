@@ -1,8 +1,8 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-var webpack = require('webpack');
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+var webpack = require('webpack')
 
 module.exports = {
   // Input file
@@ -14,14 +14,8 @@ module.exports = {
 
   devServer: {
     allowedHosts: ['all'],
-    overlay: true,
+    overlay: true
   },
-
-  // entry: [
-  //  "webpack-dev-server/client?http://127.0.0.0:8080",
-  //  "webpack/hot/only-dev-server",
-  //  "./src"
-  //],
 
   //Output file
   output: {
@@ -33,7 +27,6 @@ module.exports = {
 
   module: {
     rules: [
-      //Transpiling js with babel
       {
         test: /\.js$/,
         include: path.resolve(__dirname, 'src/js'),
@@ -78,8 +71,6 @@ module.exports = {
     ]
   },
   plugins: [
-    //We connect the html file, styles and scripts will be built in automatically
-
     new HtmlWebpackPlugin({
       title: 'Webpack 4 Starter',
       template: './src/index.html',

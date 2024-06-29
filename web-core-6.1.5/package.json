@@ -1,5 +1,5 @@
 {
-  "name": "FinalStylingProject_web_core-6.1.5",
+  "name": "web_core-6.1.5",
   "version": "1.0.0",
   "description": "My final styling project",
   "keywords": [
@@ -10,7 +10,7 @@
     "webpack"
   ],
   "license": "ISC",
-  "author": "Edward",
+  "author": "",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
